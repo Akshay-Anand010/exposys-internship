@@ -12,7 +12,22 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="/docs/4.4/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/carousel/">
-    
+    <script>
+      function addItem(){
+        document.getElementById("demo").innerHTML = "SURYA INTECH COOKER";
+        alert('item added to cart');
+}
+function addItem1(){
+        document.getElementById("demo").innerHTML = "SRI CHAKRA";
+        alert('item added to cart');
+
+}
+function addItem2(){
+        document.getElementById("demo").innerHTML = "KRISTON";
+        alert('item added to cart');
+
+}
+    </script>
   </head>   
   <body>
     <header>
@@ -25,7 +40,7 @@
       <ul class="navbar-nav mr-auto">
         <li class="nav-item dropdown" >
             <a class="nav-link dropdown-toggle active" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Our Products</a>
-            <div class="dropdown-menu" aria-labelledby="dropdown01">
+            <div class="dropdown-menu" aria-labelledby="dropdown01" >
               <a class="dropdown-item" href="#">Action</a>
               <a class="dropdown-item" href="#">Another action</a>
               <a class="dropdown-item" href="#">Something else here</a>
@@ -38,13 +53,19 @@
           <a class="nav-link" href="#">Catalouge</a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link " href="contact" tabindex="-1">About us</a>
+          <a class="nav-link " href="/about" tabindex="-1">About us</a>
         </li>
         
       </ul>
-       <a class="btn btn-warning my-2 my-sm-0" type="submit" href="/" style="margin-right: 10px;">Logout</a>
-        
-       <a class="btn btn-danger my-2 my-sm-0" type="submit" href="contact"> Contact us</a>
+      <div class="dropdown">
+        <a href="#" class="dropdown-toggle btn btn-primary pr-1 mr-2" data-toggle="dropdown" >My Cart</a>
+        <div class="dropdown-menu" id="demo">
+            
+           
+        </div>
+    </div>
+      </a>
+        <a class="btn btn-danger my-2 my-sm-0" type="submit" href="contact"> Contact us</a>
 
     </div>
   </nav>
@@ -104,3 +125,4 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
+ 
