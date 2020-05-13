@@ -12,8 +12,12 @@ const port = process.env.PORT || 3001
 app.set('views',path.join(__dirname,'views'));
 app.set('view engine','ejs');
 
-app.get('/',function(req,res){
+app.get('/home',function(req,res){
         res.render('index');
+});
+
+app.get('/',function(req,res){
+        res.render('login');
 });
 
 app.get('/contact',function(req,res){
@@ -24,7 +28,12 @@ app.get('/about',function(req,res){
         res.render('about');
 });
 
+app.get('/check',function(req,res){
+        res.render('index')
 
-
+})
+app.get('/join',function(req,res){
+        res.render('join');
+});
 //start server
 app.listen(port);
