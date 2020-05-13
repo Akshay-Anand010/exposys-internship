@@ -1,0 +1,39 @@
+<%- include ('header1') -%>
+
+<br><br><br>
+<h1 class="ml-5">My Cart</h1>
+<hr>
+<br>
+&#8594;</h5><span id="copy" class=" li ml-5 mr-2"></span><button class="btn btn-danger" onclick="rm()">Remove</button><br>
+&#8594;<span id="copy1" class="li ml-5 mr-2"></span><button class="btn btn-danger" onclick="rm1()">Remove</button><br>
+&#8594;<span id="copy2" class="li ml-5 mr-2"></span><button class="btn btn-danger" onclick="rm2()">Remove</button><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br>
+<script>
+    document.getElementById("copy").innerHTML=localStorage.getItem("tv");
+    document.getElementById("copy1").innerHTML=localStorage.getItem("tv1");
+    document.getElementById("copy2").innerHTML=localStorage.getItem("tv2");
+    function rm()
+    {
+        localStorage.removeItem("tv");
+        alert('item removed');
+        window.location = "/cart"
+    }
+function rm1()
+    {
+        localStorage.removeItem("tv1");
+        alert('item removed');
+        window.location = "/cart"
+} 
+function rm2()
+    {
+        localStorage.removeItem("tv2");
+        alert('item removed');
+        window.location = "/cart"
+}
+
+</script>
+<%- include ('footer') -%>

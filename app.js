@@ -35,5 +35,9 @@ app.get('/check',function(req,res){
 app.get('/join',function(req,res){
         res.render('join');
 });
+
+app.get('/cart',function(req,res){
+        res.render('cart');
+});
 //start server
 app.listen(port);

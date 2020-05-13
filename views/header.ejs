@@ -14,18 +14,20 @@
     <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/carousel/">
     <script>
       function addItem(){
-        document.getElementById("demo").innerHTML = "SURYA INTECH COOKER";
+        
+        localStorage.setItem("tv","SURYA INTECH COOKER");
         alert('item added to cart');
+        return false;
 }
 function addItem1(){
-        document.getElementById("demo").innerHTML = "SRI CHAKRA";
+  localStorage.setItem("tv1","SRI CHAKRA");
         alert('item added to cart');
-
+        return false;
 }
 function addItem2(){
-        document.getElementById("demo").innerHTML = "KRISTON";
+  localStorage.setItem("tv2","KRISTON");
         alert('item added to cart');
-
+        return false;
 }
     </script>
   </head>   
@@ -57,14 +59,10 @@ function addItem2(){
         </li>
         
       </ul>
-      <div class="dropdown">
-        <a href="#" class="dropdown-toggle btn btn-primary pr-1 mr-2" data-toggle="dropdown" >My Cart</a>
-        <div class="dropdown-menu" id="demo">
+      
+        <a href="/cart" class="dropdown-toggle btn btn-primary pr-1 mr-2" >My Cart</a>
+       
             
-           
-        </div>
-    </div>
-      </a>
         <a class="btn btn-danger my-2 my-sm-0" type="submit" href="contact"> Contact us</a>
 
     </div>
